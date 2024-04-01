@@ -113,8 +113,18 @@ class UC():  # a units conversion class
 
     @classmethod
     def C_to_F(cls, T):
+        """
+        Converts from Celcius to Farenheit
+        :param T: Temperature in
+        :return: Farh.
+        """
         return T*9.0/5.0+32
 
     @classmethod
     def F_to_C(cls, T):
+        """
+        Converts Farenheit to celcius
+        :param T: Temperature in F
+        :return: Cel.
+        """
         return (T-32)*5.0/9.0
